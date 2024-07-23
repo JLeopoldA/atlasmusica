@@ -1,0 +1,19 @@
+<img src="pictures/AM_Site/Atlas Musica Logo-2.jpg" alt="Atlas Musica Logo" width="85%" height="85%">
+	<table width="100%">
+		<tr>
+			<td><a href="index.html">Home</a></td>
+			</td><td>Artists</td>
+			<td>Venues</td>
+			<td>Shows</td>
+			<td>Contact</td>
+			<td>
+				<div class="search-container">
+					<form action="/action_page.php">
+						<input type="text" placeholder="This doesn't work rn.." name="search">
+						<button type="submit"><i class="fa fa-search">Submit</i></button>
+					</form>
+				</div>
+			</td>
+</tr>
+	</table>
+	

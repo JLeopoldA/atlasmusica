@@ -1,0 +1,28 @@
+To create sidebar use an <iframe>
+
+export document to CSV file to parse info to site
+SQL Database= Look into
+Open street map (osm) for map mapp stuff
+	figure out how to add custom search options
+if export as csv, make new colum for show link
+
+embed google custom search on website
+https://programmablesearchengine.google.com/about
+	need to host first
+	
+Submit link should go to a phony thing
+
+need to buy the domain name as well as hosting cost
+	https://www.godaddy.com/domainsearch/find?domainToCheck=atlasmusica
+
+
+Folders are correct for pictures
+	fix all pictures
+	
+Look up how to make subfolders for 
+		
+		.. might work
+	
+City> venue> show> artist> map
+old reddit redirect extension
+

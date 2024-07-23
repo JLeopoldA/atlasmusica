@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Artists: Tomato Face: Atlas Musica</title>
+	<link rel="stylesheet" href="style2.css">
+	</head>
+	<body>
+		<h1>Tomato Face</h1>
+		<p>
+		<img src="pictures/Tomato_Face.jpg" width="50% height="50%">
+		</p>
+		<table>
+			<tr>
+				<th style="text-align:left">Genre</th>
+				<td>Funk Punk</td>
+			</tr>
+			<tr>
+				<th style="text-align:left">Location</th>
+				<td>
+					<p>Hershey, PA <i>(2008-2011)</i></p>
+					<p>Murfreesboro, TN <i>(2012-2016)</p>
+					<p>Hershey, PA <i>(2016-2021)</i></p>
+				</td>
+			</tr>
+			
+			<tr>
+				<th style="text-align:left"> Shows Played</th>
+				<td>*should pull this info from metadata/tags*</td>
+			</tr>
+			<tr>
+				<th style="text-align:left">Band Memebers</th>
+				<td>
+					<p>Chase Price- Bass <i>(2007-2021)</i> Bass + Vocals <i>(2010-2021)</i></p>
+					<p>Jake Umberger- Drums <i>(2009-2021)</i></p>
+					<p>Riccardo MEndoza- Guitar <i>(2007-2011, 2021)</i></p>
+					<p>James Avenoso- Vocals <i>(2007-2009)</i></p>
+					<p>Christopher DeCock- Drums <i>(2007-2009)</i></p>
+				</td>
+			
+			<tr>
+				<th style="text-align:left">Affiliated Labels</th>
+				<td> Third Ham Records</td>
+			</tr>
+			<tr>
+				<th style="text-align:left">Links</th>
+				<td><a href="https://www.facebook.com/TheTomatoFace" target="blank_">Facebook</a>
+					<a href="https://www.youtube.com/@TomatoFaceOfficial1" target="blank_">Youtube</a>
+					<a href="https://tomatoface.bandcamp.com/" target="blank_">Bandcamp</a>
+					<a href="https://thirdhamrecords.bandcamp.com/" target="blank_">Bandcamp (2)</a>
+				</td>
+			</tr>
+			</table>
+<p><h1>Photo Gallery</h1></p>
+    <div class="row">
+    <!-- Change Your Button Tittle -->
+    <div class="column"><button style="width: 100%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">Butt</button></div>
+    <div class="column"><button  style="width: 100%;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">Image two</button></div>
+    <div class="column"><button style="width: 100%;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">Image three</button></div>
+    <div class="column"><button style="width: 100%;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">Image four</button></div>
+    </div>
+    <div id="myModal" class="modal"><span class="close cursor" onclick="closeModal()">×</span>
+    <div class="modal-content">
+    <div class="mySlides">
+    <!-- Change Your Image title Link -->
+    <div class="numbertext">1 / 4</div>
+    <img src="pictures/TF_2.jpg" style="width: 50%;" /></div>
+    <div class="mySlides">
+    <!-- Change Your Image title Link -->
+    <div class="numbertext">2 / 4</div>
+    <img src="pictures/TF_3.jpg" style="width: 50%; height: 50%" /></div>
+    <div class="mySlides">
+    <!-- Change Your Image title Link -->
+    <div class="numbertext">3 / 4</div>
+    <img src="https://dev-authlabsupport.pantheonsite.io/wp-content/uploads/2019/12/banner-05.jpg" style="width: 100%;" /></div>
+    <div class="mySlides">
+    <!-- Change Your Image title Link -->
+    <div class="numbertext">4 / 4</div>
+    <img src="https://dev-authlabsupport.pantheonsite.io/wp-content/uploads/2019/12/home-new-bg-free-img.jpg" style="width: 100%;" /></div>
+    <a class="prev" onclick="plusSlides(-1)">❮</a> <a class="next" onclick="plusSlides(1)">❯</a>
+    <div class="caption-container">
+    <p id="caption"></p>
+    </div>
+    <!-- Change Your Image title Link alt text to show bellow-->
+    <div class="column"><img class="demo cursor" src="pictures/TF_2.jpg" style="width: 50%;" onclick="currentSlide(1)" alt="Your Title of image 1" /></div>
+    <div class="column"><img class="demo cursor" src="pictures/TF_3.jpg" style="width: 50%;" onclick="currentSlide(2)" alt="Your Title of image 2" /></div>
+    <div class="column"><img class="demo cursor" src="https://dev-authlabsupport.pantheonsite.io/wp-content/uploads/2019/12/banner-04.jpg" style="width: 100%;" onclick="currentSlide(3)" alt="Your Title of image 3" /></div>
+    <div class="column"><img class="demo cursor" src="https://dev-authlabsupport.pantheonsite.io/wp-content/uploads/2019/12/home-new-bg-free-img.jpg" style="width: 100%;" onclick="currentSlide(4)" alt="Your Title of image 4" /></div>
+    </div>
+<!-- Change Your Image title Link -->
+    </div>
+ <script>
+        /**
+         * -------------------------------xxxxxxxxxxxx---------------------------------
+         * Warning- if you use same class id then it will conflict with every slideshow
+         * so please when you duplicate all the code then must change the class and id
+         * -------------------------------xxxxxxxxxxxx---------------------------------
+        */
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+			<p>*Insert Video gallery*</p>
+			<p><h1>Upcoming Shows</h1></p>
+			<p style="color:grey;"><h4>There are no upcoming shows for Tomato Face</h4>
+			<p>*Insert Interactive Map*</p>
+			<p>*Insert Show History*</p>
+	</body>
+</html>
